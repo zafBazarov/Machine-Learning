@@ -80,8 +80,34 @@ print(f"{user_name} is {user_age} years old. His interests include {user_interes
 
 # Loop runs a chunk of code multiple times. 
 
-# for loop
+# for loop - it is the most popular loop
 # a simple for loop iterating over a sequence of numbers
-for i in range 
+for i in range(5): 
+  print(i)  # print i the element
+
+# We can also iterate over items in a list.
+
+# for loop iterating over a list
+user_interests = ["AI", "Music", "Bread"]
+
+for interest in user_interests:
+  print(interest)   # rpint each items in list
+
+# It is alos possible to iterate over items in a dictionary
+
+# for loop iterating over items in a dictionary
+user_dict = {"Name": "John", "Age":29, "Interests":["AI", "Music", "Bread"]}
+
+for key in user_dict.keys():
+    print(key, "=", user_dict[key]) # print each key and corresponding value
+
+
+# Conditions is a program logic
+
+# if-else statements
+
+# check if user is 18 or older
+if user_dict["Age"] >=18:
+  print("User is an adult")
 
 
