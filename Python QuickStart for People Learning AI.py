@@ -124,3 +124,14 @@ else:
 
 # for loop + if statement
 
+# count the number of users interested in bread
+user_list = [ {"Name": "John", "Age":29, "Interests":["AI", "Music", "Bread"]}, 
+              {"Name": "Shaw", "Age":27, "Interests":["Marketing", "YouTube", "Shopping"]} ]
+count = 0 # initialize count
+
+for user in user_list:
+  if "Bread" in user["Interests"]:
+      count = count + 1     # update count
+
+print(count, "user(s) interested in Bread")
+
