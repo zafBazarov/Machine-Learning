@@ -15,9 +15,9 @@
 # This tutorial is for Who
   # learning AI + some coding, but new to Python
 
-# Python Basics
+### Python Basics
 
-# Data Types
+## Data Types
     # A way to classify data to process it appropriately and efficiently
 # Text 
       # Strings = chracter sequences e.g. "Hello", "He11o!"
@@ -39,7 +39,7 @@
 
           lst4= [["a","b"], [1, 2], [2.2, 3.3]] # list of lists
 
-# Dictionaries = key-value pair sequences
+## Dictionaries = key-value pair sequences
     # It is a bit different than list so instead of the square brackets we have curly brackets {}. Also we have key value pairs  where each item in the dictionary consists two parts a key which will always be a string and a value whcin can be any data type. 
     # A sing dictionary might have a singe item with a key called name and a value of name.
 
@@ -61,4 +61,17 @@
 {"User": {"Name": "John", "Age":29, "Interests":["AI", "Music", "Bread"]},
  "Last_login": "2025-01-01",
  "Membership_Tier": "Free"}
+
+## Variables = are abstract representation of underlying data. It gives to make coding a bit easier. This helps us avoid writing John over and over again.
+
+# creating a variable and printing it
+user_name = "John"
+print(user_name)
+
+# We can also define multiple variables and use them to print a specific text. When writing Python scripts, this gives us more flexibility.
+# defining more variables and printing them as a formatted string. 
+user_age = 29
+user_interests = ["AI", "Music", "Bread"]
+
+print(f"{user_name} is {user_age} years old. His interests include {user_interests}.")
 
