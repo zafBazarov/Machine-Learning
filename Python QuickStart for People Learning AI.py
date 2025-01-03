@@ -151,7 +151,7 @@ len(user_list)   # len() works with only strings not integers
 user_interests = ["AI", "Music", "Bread"]
 print(len(user_interests))  # the result is 3 because we have only there interest in the list
 
-# string methods
+## string methods
 # make string all lowercase
 print(user_dict["Name"].lower())
 
@@ -165,7 +165,36 @@ print(user_dict["Name"].split("ha"))
 print(user_dict["Name"].replace("w", "whin"))
 
 
+## list methods
+
+# add an element to the end of a list
+user_dict["Interests"].append("Entrepreneurship")
+print(user_dict["Interests"])
+
+# remove a pecific element from a list
+user_dict["Interests"].pop(0)   # 0 is the order number of an element
+print(user_dict["Interests"])      
+
+# insert an element into a specific place in a list
+user_dict["Interests"].insert(1, "AI") # 1 is the order number of an element
+print(user_dict["Interests"])
 
 
+## dictionary methods
 
+# accessing dict keys
+print(user_dict.keys())
 
+# accessing dict values
+print(user_dict.values())
+
+# accessing dict items
+print(user_dict.items())
+
+# aremoving a key
+user_dict.pop("Name")
+print(user_dict.items())
+
+# adding a key
+user_dict["Name"] = "Shaw"
+print(user_dict.items())
