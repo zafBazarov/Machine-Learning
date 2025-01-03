@@ -111,3 +111,16 @@ if user_dict["Age"] >=18:
   print("User is an adult")
 
 
+# we can also have 'else'. if the value is not true we can have do another command using else.
+
+# check if user is 1000 or older, if not print they have much to learn
+if user_dict["Age"] >=1000:
+  print("User is wise")
+else:
+  print("User has much to learn")
+
+
+# Bringing Loops and Conditions together
+
+# for loop + if statement
+
