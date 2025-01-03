@@ -135,3 +135,37 @@ for user in user_list:
 
 print(count, "user(s) interested in Bread")
 
+
+## Functions
+# Fuctions are operations we can perform on specific data types. 
+
+# print() fiúnctions - prints our data
+print(user_list)
+
+# type(), getting the data type of a variable
+get(user_list)
+
+# len(), getting the length of a variable. But it is not for integers it works only with strings
+len(user_list)   # len() works with only strings not integers
+
+user_interests = ["AI", "Music", "Bread"]
+print(len(user_interests))  # the result is 3 because we have only there interest in the list
+
+# string methods
+# make string all lowercase
+print(user_dict["Name"].lower())
+
+# make string all uppercase
+print(user_dict["Name"].upper())
+
+# split string into list based on a specific character sequence
+print(user_dict["Name"].split("ha"))
+
+# replace a character sequence with another
+print(user_dict["Name"].replace("w", "whin"))
+
+
+
+
+
+
