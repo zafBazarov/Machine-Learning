@@ -40,4 +40,25 @@
           lst4= [["a","b"], [1, 2], [2.2, 3.3]] # list of lists
 
 # Dictionaries = key-value pair sequences
-    # It is a bit different than list. 
+    # It is a bit different than list so instead of the square brackets we have curly brackets {}. Also we have key value pairs  where each item in the dictionary consists two parts a key which will always be a string and a value whcin can be any data type. 
+    # A sing dictionary might have a singe item with a key called name and a value of name.
+
+# a dictionary
+{"Name": "John"}
+
+# a dictionary with multiple key-value pairs
+ {"Name": "John", "Age":29, "Interests":["AI", "Music", "Bread"]}
+
+# We can also combine a list in dictionary data types. 
+
+# a list of dictionaries
+[ {"Name": "John", "Age":29, "Interests":["AI", "Music", "Bread"]}, 
+ {"Name": "Shaw", "Age":27, "Interests":["Marketing", "YouTube", "Shopping"]} ]
+
+# we can also have a dictionary within a dictionary the way that looks is we might have a key value pair corresponding to a user and the value for this item will be another dictionary which includes user information then the other items in the dictionary might be the last login date and the membership tier of user.
+
+# a nested dictionary
+{"User": {"Name": "John", "Age":29, "Interests":["AI", "Music", "Bread"]},
+ "Last_login": "2025-01-01",
+ "Membership_Tier": "Free"}
+
