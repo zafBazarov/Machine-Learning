@@ -40,3 +40,4 @@
           lst4= [["a","b"], [1, 2], [2.2, 3.3]] # list of lists
 
 # Dictionaries = key-value pair sequences
+    # It is a bit different than list. 
