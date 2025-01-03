@@ -73,5 +73,15 @@ print(user_name)
 user_age = 29
 user_interests = ["AI", "Music", "Bread"]
 
-print(f"{user_name} is {user_age} years old. His interests include {user_interests}.")
+print(f"{user_name} is {user_age} years old. His interests include {user_interests}.")  # f is the formatted string
+
+
+## Loops & Conditions
+
+# Loop runs a chunk of code multiple times. 
+
+# for loop
+# a simple for loop iterating over a sequence of numbers
+for i in range 
+
 
