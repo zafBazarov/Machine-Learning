@@ -83,5 +83,21 @@ df.loc[bad_mem.index]
 # See scikit-learn section about Novelty and Outlier Detection if you want to go deeper.
 
 ## Duplicated data
+# Even worse, if you process the same transaction twice, you're going to lose a customer. Let's have a look at the shopping cart data. 
+# So we have date, name, amount, and price. Let's load it up. So we import pandas as pd. And now we're going to read the csv passing the date column as date. 
+# And you can see we have several columns like one and two, and four and five that looks the same.  
 
+#library
+import pandas as pd
+
+df = pd.read_csv ('cart.csv', pasrse_dates=['date']
+df
+
+
+# Pandas come with a duplicated method. Let's run it. And you see it's going to catch only the last two. So five is a duplicate of four. If you look closely, you see that in rows one and two, the price is different, 1.70 and 1.20. 
+# `By default, duplicated will consider values from all columns`
+df.duplicated()
+
+# But we can tell it to look for a subset of columns. In database terms, we call this the key. So let's run again duplicated, this time looking only at the date and the name column. And now we've found that line two is also a duplicate of line one.
+df.duplicated (['date', 'name'])
 
