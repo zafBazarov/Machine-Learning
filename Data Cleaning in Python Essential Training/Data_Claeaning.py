@@ -30,5 +30,9 @@ df
 
 df['float'].astype('Int32')
 
+#Let's do df amount astype Int32. And if you're going to run this cell, you're going to see now we get integer and another missing value, NA. How can you programmatically find out where are these missing values? You can use the pandas.isnull function or the isnull method of the data frame. So if I'm going to run data frame isnull, I'm going to get a data frame with true and false per cell but this is usually not what we want. 
+df.isnull()
 
-Let's do df amount astype Int32. And if you're going to run this cell, you're going to see now we get integer and another missing value, NA. How can you programmatically find out where are these missing values? You can use the pandas.isnull function or the isnull method of the data frame. So if I'm going to run data frame isnull, I'm going to get a data frame with true and false per cell but this is usually not what we want. In my case, I want to find out rows that have a missing value. So I'm going to do isnull and then ask any, so any of the value in the row in the first axis, the rows. If I'm going to run this cell, I'm going to see the rows that have missing values in them. Note that the empty string is not considered a missing value. You will need to use Boolean indexing to find this.
+# In my case, I want to find out rows that have a missing value. So I'm going to do isnull and then ask any, so any of the value in the row in the first axis, the rows. If I'm going to run this cell, I'm going to see the rows that have missing values in them. 
+df.isnull().any(axis=1)
+# Note that the empty string is not considered a missing value. You will need to use Boolean indexing to find this.
