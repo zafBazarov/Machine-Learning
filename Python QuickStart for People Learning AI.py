@@ -191,10 +191,33 @@ print(user_dict.values())
 # accessing dict items
 print(user_dict.items())
 
-# aremoving a key
+# removing a key
 user_dict.pop("Name")
 print(user_dict.items())
 
 # adding a key
 user_dict["Name"] = "Shaw"
 print(user_dict.items())
+
+
+## User-defined  Funtcion 
+# helps create our own functions
+
+def user_description((user_dict):
+  """
+    Function to return a sentence (string) describing input user
+    """
+  return f'{user_dict["Name²]} is {user_dict["Age"]} years old and is interested in {user_dict["Interests] [0]}-'
+
+# print user description
+description = ser_description(user_dict)
+print(description)
+
+# print desctiption for a new usr!
+new_user_dict = {"Name":"Ify", "Age":27, "Interests":["Marketing", "Sales", "Trading"]
+print(user_description(new_user_dict))
+
+# We can also create a complicated user definide function. 
+
+
+                 
