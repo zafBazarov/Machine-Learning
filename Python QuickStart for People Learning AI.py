@@ -218,6 +218,54 @@ new_user_dict = {"Name":"Ify", "Age":27, "Interests":["Marketing", "Sales", "Tra
 print(user_description(new_user_dict))
 
 # We can also create a complicated user definide function. 
+# Our task is to create a function to count the number of users interested in an arbitrary topic
+
+# define another custom function
+  def interested_user_count(user_list, topic):
+    """
+    Function to count number of sers interested in arbitrary topic
+    """
+    count=0
+
+for user in user_list:
+  if topic in user["Interests]:
+      count = count +1 
+
+return count
+
+# define user list and topc
+user_list = [user_dict, new_user_dict]
+topic = "Shopping"
+
+# compute interested user count and print it
+count = interested_user_count(user_list, topic)
+print(f"{coun} user(s) interested in {topic}")
+
+
+## Libraries
+
+# Expanding core Python functionality 
+
+# picture
+
+# Numpy library
+
+import numpy as np
+
+# create a "vector"
+v = np.array([1,3,6])
+print(v)
+
+# muliply a "vector"
+print(2*v)
+
+# create a matrix
+X = np.array([v, 2*v, v/2])
+print(X)
+
+# matrix multiplication
+print(np.matmul(X, v))
+
 
 
                  
